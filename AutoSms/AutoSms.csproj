@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>AutoEmailToSms</PackageId>
+    <Authors>https://github.com/todarko</Authors>
+    <Product>AutoEmailToSms</Product>
+    <Description>Send out text messages using SMTP relay services. You will need a valid email address and token for authorization to send.</Description>
+    <PackageTags>email,text,sms,mms,smtp</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="2.11.1" />
+  </ItemGroup>
+
+</Project>

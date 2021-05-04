@@ -8,6 +8,10 @@
     <Description>Send out text messages using SMTP relay services. You will need a valid email address and token for authorization to send.</Description>
     <PackageTags>email,text,sms,mms,smtp</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/todarko/AutoEmailToSms</PackageProjectUrl>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

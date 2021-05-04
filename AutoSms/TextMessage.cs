@@ -18,8 +18,7 @@ namespace AutoSms
 
         public void SendTextMessage(TextMessage textMessage, int portNumber = 465, bool UseSsl = true) 
         {
-            var isNumber = long.TryParse(textMessage.To, out _);
-            if(isNumber is false)
+            if(!long.TryParse(textMessage.To, out _))
             {
                 throw new AutoSmsException("Please use only integers for the phone number.");
             }
@@ -34,7 +33,6 @@ namespace AutoSms
 
             var toAddress = MailboxAddress.Parse(textMessage.To + textMessage.TextServiceProvider);
             toAddress.Name = textMessage.To;
-            // check valid email, return error
             var fromAddress = MailboxAddress.Parse(textMessage.EmailAuthenticate);
             fromAddress.Name = textMessage.EmailAuthenticate;
 

@@ -5,20 +5,20 @@ https://support.google.com/a/answer/176600?hl=en#zippy=%2Cuse-the-gmail-smtp-ser
 
 Use the following to then send a text via Gmail to an AT&T phone number.
 
-            TextMessage textMessage = new TextMessage();
-            textMessage.To = "XXXXXXXXX";
-            textMessage.Body = "Hello World!";
-            textMessage.EmailAuthenticate = "youremail@gmail.com";
-            textMessage.Token = "sometokenfromgmail";
-            textMessage.TextServiceProvider = TextServiceProvider.AttMms;
-            textMessage.EmailServiceProvider = EmailServiceProvider.Gmail;
+	TextMessage textMessage = new TextMessage();
+	textMessage.To = "XXXXXXXXX";
+	textMessage.Body = "Hello World!";
+	textMessage.EmailAuthenticate = "youremail@gmail.com";
+	textMessage.Token = "sometokenfromgmail";
+	textMessage.TextServiceProvider = TextServiceProvider.AttMms;
+	textMessage.EmailServiceProvider = EmailServiceProvider.Gmail;
 
-            try
-            {
-                textMessage.SendTextMessage(textMessage);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-                throw;
-            }
+	try
+	{
+		textMessage.SendTextMessage(textMessage);
+	}
+	catch (Exception e)
+	{
+		Console.WriteLine(e.Message);
+		throw;
+	}

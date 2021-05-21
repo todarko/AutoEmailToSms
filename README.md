@@ -1,6 +1,10 @@
 # AutoEmailToSms
 Send out text messages using SMTP relay services. You will need a valid email address and token for authorization to send.
 
+nuget package found here: https://www.nuget.org/packages/AutoEmailToSms/
+
+	dotnet add package AutoEmailToSms --version 1.0.2
+
 Setup to use with Gmail
 
 At the following link setup via the Other setup options -> Use the Gmail SMTP server
